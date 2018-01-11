@@ -1,3 +1,4 @@
+
 # Project Overview
 
 MyRecipeBook
@@ -5,7 +6,7 @@ MyRecipeBook
 ## Project Schedule
 
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
+This schedule will be used to keep track of your progress throughout the week and align with our expectations.
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
@@ -24,8 +25,7 @@ This Project will be a application that will be using TheMealDB api and will all
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
-
+Include a full list of features that have been prioritized based on the `Time and Importance` Matix.
 ## MVP 
 
 Include the full list of features that will be part of your MVP 
@@ -85,7 +85,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
 | Function | Description | 
-| --- | :---: |  
+| --- | :---: |
 | Capitalize | This will capitalize the first letter in a string | 
 
 ## Additional Libraries
@@ -93,7 +93,7 @@ Helper functions should be generic enought that they can be reused in other appl
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.
 
 ## jQuery Discoveries
  Use this section to list some, but not all, of the jQuery methods and\or functionality discovered while working on this project.
@@ -104,6 +104,8 @@ Use this section to include a brief code snippet of functionality that you are p
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
+
 **RESOLUTION**: Missing comma after first object in sources {} object
+=======
+# shazi
+
