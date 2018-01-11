@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include ../partials/boilerplate.ejs %>
+
+<%- include ../partials/navbar.ejs %>
+<h1>Search by Category page 2</h1>
+<a href="/">Go Back Home</a>
+
+<form action='/browse/meals' method="POST">
+    <% data.forEach(meal => { %>
+
+        <div class="single-meal">
+          <input type='image' name="idMeal" value="<%= meal.idMeal %>"  src="<%= meal.strMealThumb %>" alt="Img for Meal" style="width: 20vw;height: 20vw;">
+          <br />
+          <h3><%= meal.strMeal %></h3>
+        </div>
+    <% }) %>
+    <input type="submit" placeholder='Submit'>
+</form>
+
+
+
+
+<%- include ../partials/footer.ejs %>

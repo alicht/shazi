@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ../partials/boilerplate.ejs %>
+
+<%- include ../partials/navbar.ejs %>
+<h1>Search by Category</h1>
+
+<form action="browse/search" method="POST">
+    <% data.forEach(meal => { %>
+
+        <div class="single-meal">
+          <input type="radio" name="category" value="<%= meal.strCategory %>" ><%= meal.strCategory %>
+          <!-- <input type="text" value="<%= meal.strCategory %>"> -->
+        </div>
+    <% }) %>
+    <input type="submit" placeholder='Submit'>
+</form>
+<%- include ../partials/footer.ejs %>

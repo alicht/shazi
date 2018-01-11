@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include ../partials/boilerplate.ejs %>
+
+<%- include ../partials/navbar.ejs %>
+<h1>Check Out this Recipe!</h1>
+<a href="/">Go Back Home</a>
+
+<% data.forEach(meal => { %>
+<form action='/browse' method="POST">
+
+  <input type="submit" value="Save to Favorites">
+
+        <div class="single-meal">
+
+
+          <img src='<%= meal.strMealThumb  %>' value='<%= meal.strMealThumb  %>' name="image" alt="img for meal" style="width: 20vw;height: 20vw; border: 2px black solid;">
+          <input type="hidden" name="recipe" value="<%= meal.strMeal %>">
+          <h2><%= meal.strMeal %></h2>
+          </input>
+          <input type="hidden" name="instructions" value=" <%= meal.strInstructions %> ">
+          <h4><%= meal.strInstructions %></h4>
+          </input>
+          <input type="hidden" name="category" value="<%= meal.strCategory %>">
+          <input type="hidden" name="area" value="<%= meal.strArea %>">
+          <input type="hidden" name="img" value="<%= meal.strMealThumb %>">
+          <input type="hidden" name="tag" value="<%= meal.strTags %>">
+
+
+
+          <input type="hidden" name="ingredients" value="">
+
+          <input type="hidden" name="measurement" value="">
+
+          <h5><%= meal.strIngredient1 + " " + meal.strMeasure1 %></h5>
+          <h5><%= meal.strIngredient2 + " " + meal.strMeasure2 %></h5>
+          <h5><%= meal.strIngredient3 + " " + meal.strMeasure3 %></h5>
+          <h5><%= meal.strIngredient4 + " " + meal.strMeasure4 %></h5>
+          <h5><%= meal.strIngredient5 + " " + meal.strMeasure5 %></h5>
+          <h5><%= meal.strIngredient6 + " " + meal.strMeasure6 %></h5>
+          <h5><%= meal.strIngredient7 + " " + meal.strMeasure7 %></h5>
+          <h5><%= meal.strIngredient8 + " " + meal.strMeasure8 %></h5>
+          <h5><%= meal.strIngredient9 + " " + meal.strMeasure9 %></h5>
+          <h5><%= meal.strIngredient10 + " " + meal.strMeasure10 %></h5>
+          <h5><%= meal.strIngredient11 + " " + meal.strMeasure11 %></h5>
+          <h5><%= meal.strIngredient12 + " " + meal.strMeasure12 %></h5>
+          <h5><%= meal.strIngredient13 + " " + meal.strMeasure13 %></h5>
+          <h5><%= meal.strIngredient14 + " " + meal.strMeasure14 %></h5>
+
+        </div>
+    <% }) %>
+</form>
+
+
+<%- include ../partials/footer.ejs %>
